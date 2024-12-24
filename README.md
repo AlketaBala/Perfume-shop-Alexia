@@ -10,7 +10,7 @@ Plotësimi i Kërkesave*
 
 --HTML
 -Skeleti HTML5:Të gjithë skedarët HTML (index.html, about.html, contact.html) përdorin doktipin standard HTML5 dhe elementet semantike si <header>, <main>, <footer>, <nav>, <section> dhe <article> për strukturën.
--Titulli më i rëndësishëm HTML: Titujt e duhur (p.sh., <h1>, <h2>, <h3>) përdoren në të gjithë faqen e internetit për të organizuar përmbajtjen në mënyrë efektive.
+-Titulli më i rëndësishëm HTML: Titujt e duhur (p.sh., <h1>, <h2>, <h3>) përdoren në të gjithë faqen e internetit për të organizuar përmbajtjen në mënyrë efektive.                                                  
 -Formulari: Një formë kontakti zbatohet në contact.html me fushat për emrin, emailin, telefonin dhe mesazhin.
 -Formulari vërteton hyrjen duke përdorur JavaScript dhe ruan të dhënat e paraqitura në SesionStorage.
 -Meta etiketat: Meta etiketat për autorin, fjalët kyçe dhe përshkrimin përfshihen në të gjithë skedarët HTML.
