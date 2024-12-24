@@ -1,0 +1,353 @@
+/* Base Styles (Mobile First) */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #741414;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .logo {
+    width: 10px;
+    height: 10px;
+    
+    
+  }
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .perfume-collection {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allows wrapping of items on smaller screens */
+  }
+  
+  .perfume-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; /* Full width by default */
+  }
+  
+  #Footer {
+    background: #741414;
+    margin: 2px 2px;
+    padding: 40px 0;
+    padding-left: 10px;
+  }
+  
+  #Footer ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .list {
+    text-align: center;
+  }
+  
+  #Footer ul li a:hover {
+    opacity: 1;
+  }
+  
+  #Footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  #Footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #1f578f;
+  }
+  
+  #Footer .social a {
+    font-size: 25px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.3;
+  }
+  
+  #Footer .social a:hover {
+    opacity: 1;
+  }
+  
+  #Footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: none;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  #Footer .copyright {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 15px;
+    color: #aaa;
+  }
+  
+  .img {
+    margin-bottom: -21px;
+  }
+  
+  .center {
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: -200px;
+  }
+  
+  .center .title {
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+  }
+  
+  .center .subtitle {
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+  .contact-section {
+    background: url(ak.png);
+    background-size: cover;
+    padding: 40px 0;
+  }
+  
+  .contact-section h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .border {
+    width: 100px;
+    height: 10px;
+    background: #152463;
+    margin: 40px auto;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: rgb(124, 154, 189);
+    padding: 20px 40px;
+    outline: none;
+    color: rgb(236, 236, 236);
+    transition: 0.5s;
+  }
+  
+  .contact-form-text-focus {
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  
+  textarea.contact-form-text {
+    resize: none;
+    height: 320px;
+  }
+  
+  .contact-form-btn {
+    float: right;
+    border: 0;
+    background: #141665;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .contact-form-btn:hover {
+    background: #dce3e7;
+  }
+  
+  /* Slideshow */
+  .slideshow-container {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .mySlides {
+    text-align: center;
+  }
+  
+  .text {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .prev, .next {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .dot {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablet (min-width: 768px) */
+  @media (min-width: 768px) {
+    .perfume-collection {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .perfume-card {
+      width: 45%; /* Set card width for tablet view */
+    }
+  
+    #Footer {
+      padding: 50px 0;
+    }
+  
+    .contact-form {
+      max-width: 80%; /* Make the contact form wider */
+    }
+  }
+  
+  /* Laptop/Desktop (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .perfume-collection {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .perfume-card {
+      width: 30%; /* Adjust card width for laptop/desktop */
+    }
+  
+    #Footer {
+      padding: 60px 0;
+    }
+  
+    .contact-form {
+      max-width: 70%;
+    }
+  }
+  
+  /* Large Desktop (min-width: 1280px) */
+  @media (min-width: 1280px) {
+    .perfume-collection {
+      justify-content: space-around;
+    }
+  
+    .perfume-card {
+      width: 22%; /* Adjust card width for large desktop */
+    }
+  
+    #Footer {
+      padding: 70px 0;
+    }
+  
+    .contact-form {
+      max-width: 50%;
+    }
+  
+    .center .title {
+      font-size: 100px; /* Larger title for large screens */
+    }
+  
+    .center .subtitle {
+      font-size: 40px; /* Larger subtitle for large screens */
+    }
+  }
+  
+  /* Small Mobile (max-width: 480px) */
+  @media (max-width: 480px) {
+    .center .title {
+      font-size: 60px; /* Smaller title on very small screens */
+    }
+  
+    .center .subtitle {
+      font-size: 20px; /* Smaller subtitle on very small screens */
+    }
+  
+    .perfume-card {
+      width: 100%; /* Full width on very small screens */
+    }
+  
+    #Footer ul li {
+      display: block; /* Stack footer links on small screens */
+      text-align: center;
+    }
+  
+    #Footer .social a {
+      font-size: 20px; /* Smaller social icons on small screens */
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .about-box {
+    background: #f7f5f2; /* Soft beige background */
+    border: 2px solid #c8b9a6; /* Elegant border color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 800px; /* Center and limit the width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Georgia', serif; /* Serif font for an elegant look */
+    color: #333; /* Dark text for contrast */
+  }
+  
+  .about-box h2 {
+    font-size: 24px;
+    color: #741414; /* Accent color */
+    margin-bottom: 15px;
+  }
+  
+  .about-box h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #5c4c3c; /* Secondary accent color */
+  }
+  
+  .about-box ul {
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .about-box ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-box p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
